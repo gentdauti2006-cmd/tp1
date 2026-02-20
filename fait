@@ -1,0 +1,45 @@
+def add(x1, x2):
+    return x1 + x2 
+    
+
+def sous(x1, x2):
+    return x1 - x2 
+    
+
+def mult(x1, x2):
+    return  x1 * x2 
+ 
+
+def div(x1, x2):
+   return  x1 / x2 
+
+
+def ras(x1):
+   return  x1 ** 0.5
+
+
+def car(x1):
+   return  x1 * x1
+
+def calculatrice():
+     x1 = float(input("donne le nombre que tu veux: ")) 
+     x2 = float(input("donne le deuxieme nombre que tu veux: ")) 
+     op = str(input("donne l'opperation que tu veux faire avec c'est deux nombre: "))
+     if op =="+":
+         return add(x1, x2)
+     elif op =="-":
+         return sous(x1, x2)
+     elif op =="*":
+         return mult(x1,x2)
+     elif op =="/":
+         return div(x1, x2)
+     elif op =="2":
+         return car(x1)
+     elif op =="v":
+         return ras(x1)
+     else :
+         return "non tu le fais expres ouuuuuu pas compliquer de choisir entre +, -, *, /, 2, v "
+        
+
+
+print(calculatrice())
